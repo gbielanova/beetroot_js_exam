@@ -1,0 +1,19 @@
+.page {
+  padding: 40px;
+}
+
+.active {
+  background-color: $white;
+}
+
+.nav__item-circle {
+  height: 10px;
+  width: 10px;
+  border: 1px $white solid;
+  border-radius: 50%;
+}
+
+.social {
+  color: $white;
+  font-size: 0.8rem;
+}
