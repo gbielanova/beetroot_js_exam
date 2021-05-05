@@ -12,12 +12,17 @@
     format("woff2");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 // Colors
 $white: #ffffff;
 $grey: #2c4058;
+$lightGrey: #4b5562;
 $blue: #55b7ff;
+$purple: #7e5aff;
 
 // Fonts
 $bold: "GothamBold", sans-serif;
 $book: "GothamBook", sans-serif;
 $regular: "GothamRegular", sans-serif;
+$sans: "Open Sans", sans-serif;
