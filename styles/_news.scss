@@ -13,10 +13,20 @@
   align-items: center;
   justify-content: center;
 
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 80%;
+    width: 90%;
+  }
+
   &__articles {
     height: 60%;
-    min-height: 500px;
-    width: 90%;
+    min-height: 550px;
+    width: 80%;
 
     list-style: none;
 

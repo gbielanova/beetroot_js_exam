@@ -11,6 +11,9 @@
     background-color: $white;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--bg1 {
       background-image: url(./../img/news1.jpg);
@@ -22,6 +25,10 @@
 
     &--bg3 {
       background-image: url(./../img/news3.jpg);
+    }
+
+    &-hover {
+      display: none;
     }
   }
 
@@ -36,7 +43,6 @@
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 30px;
   }
 
   &__text {
@@ -95,5 +101,9 @@
     font-family: $book;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  &:hover .article__image-hover {
+    display: block;
   }
 }
