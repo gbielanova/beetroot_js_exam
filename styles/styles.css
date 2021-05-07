@@ -514,4 +514,53 @@
 .article:hover .article__image-hover {
   display: block;
 }
+
+.gallery {
+  height: 80vh;
+  min-height: 500px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5%;
+}
+
+.gallery__photos {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% auto;
+}
+
+.gallery__photos-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery__photo-big {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+.gallery__photo-small {
+  width: calc(50% - 10px);
+  margin: 5px;
+}
 /*# sourceMappingURL=styles.css.map */
