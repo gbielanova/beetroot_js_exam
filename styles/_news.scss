@@ -1,8 +1,5 @@
 .news {
-  background-color: $blue;
-  background-image: url(./../img/news_bg.jpg);
-  background-position: center;
-  background-size: cover;
+  @include section-background($blue, url(./../img/news_bg.jpg));
 
   height: 100vh;
   min-height: 600px;

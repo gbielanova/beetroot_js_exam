@@ -1,8 +1,5 @@
 .contact {
-  background-color: $white;
-  background-image: url(./../img/contact_bg.jpg);
-  background-position: center;
-  background-size: cover;
+  @include section-background($white, url(./../img/contact_bg.jpg));
 
   height: 60vh;
   min-height: 400px;

@@ -1,9 +1,5 @@
 .header {
-  background-color: $blue;
-  background-image: url(./../img/Bg.jpg);
-  background-position: center;
-  background-size: cover;
-
+  @include section-background($blue, url(./../img/Bg.jpg));
   height: 100vh;
   min-height: 600px;
   width: 100vw;

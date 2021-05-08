@@ -1,0 +1,6 @@
+@mixin section-background($color, $url) {
+  background-color: $color;
+  background-image: $url;
+  background-position: center;
+  background-size: cover;
+}

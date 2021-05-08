@@ -1,8 +1,5 @@
 .footer {
-  background-color: $purple;
-  background-image: url(./../img/footer_bg.jpg);
-  background-position: center;
-  background-size: cover;
+  @include section-background($purple, url(./../img/footer_bg.jpg));
 
   height: 40vh;
   min-height: 150px;

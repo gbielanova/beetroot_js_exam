@@ -405,9 +405,6 @@
 .article__image {
   width: 100%;
   height: 40%;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,15 +417,24 @@
 }
 
 .article__image--bg1 {
+  background-color: #ffffff;
   background-image: url(./../img/news1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .article__image--bg2 {
+  background-color: #ffffff;
   background-image: url(./../img/news2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .article__image--bg3 {
+  background-color: #ffffff;
   background-image: url(./../img/news3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .article__image-hover {

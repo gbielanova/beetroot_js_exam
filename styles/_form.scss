@@ -5,10 +5,7 @@ $fWidth: 70%;
   height: $fHeight;
   width: $fWidth;
   box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
-  background-color: $white;
-  background-image: url(./../img/form_bg.jpg);
-  background-position: center;
-  background-size: cover;
+  @include section-background($white, url(./../img/form_bg.jpg));
 
   position: absolute;
   top: calc(#{$fHeight / 2});
