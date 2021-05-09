@@ -31,7 +31,7 @@
 
   &__texts {
     padding: 5%;
-    height: 60%;
+    height: 40%;
   }
 
   &__header {
@@ -47,6 +47,9 @@
     font-family: $sans;
     font-size: 18px;
     font-weight: 400;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
   }
 
   &__author {

@@ -88,3 +88,12 @@
     margin-top: 40px;
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  .project {
+    &__img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
