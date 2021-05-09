@@ -300,6 +300,11 @@
   width: 100%;
 }
 
+.header__arrow {
+  width: 60px;
+  height: 60px;
+}
+
 .header__sidenav {
   display: -webkit-box;
   display: -ms-flexbox;
