@@ -26,7 +26,7 @@ function validateForm() {
         [name, email].forEach(element => {
             let confirmation = document.createElement('p');
             (element == name) ?
-                confirmation.innerHTML = `Thank you for contactiong us, ${element}!` :
+                confirmation.innerHTML = `Thank you for contacting us, ${element}!` :
                 confirmation.innerHTML = `We will contact you soon by ${element}!`;
             confirmation.classList.add('form__text')
             Inputs.appendChild(confirmation);
