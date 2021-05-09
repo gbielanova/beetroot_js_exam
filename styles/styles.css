@@ -233,9 +233,127 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 767px) {
-  .nav__bar {
+.nav__burger {
+  display: none;
+}
+
+.nav__burger-line {
+  width: 45px;
+  height: 5px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 10px 0 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 20%;
+  width: 80%;
+  z-index: 1;
+  -webkit-animation: fadein 1s ease-in alternate;
+  animation: fadein 1s ease-in alternate;
+}
+
+.nav .mobile a {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hide {
+  width: 0;
+  opacity: 0;
+}
+
+.line-1 {
+  margin-top: 0;
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.line-3 {
+  -webkit-transform: rotateZ(0);
+          transform: rotateZ(0);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.line-1-rotate {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.line-3-rotate {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 10px;
+  height: 10px;
+  background: #55b8fff5;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.run {
+  opacity: 1;
+  -webkit-transform: scale(300);
+          transform: scale(300);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav__bar, .nav__social {
     display: none;
+  }
+  .nav__burger {
+    display: block;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .nav__logo {
+    width: 60%;
   }
 }
 
