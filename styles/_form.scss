@@ -43,10 +43,13 @@ $fWidth: 70%;
     align-items: flex-end;
   }
 
+  &__submit {
+    margin-top: 5%;
+  }
+
   &__input {
     border: none;
     border-bottom: $grey 1px solid;
-    margin-bottom: 5%;
     padding-bottom: 10px;
     width: 100%;
     height: 100%;
@@ -63,5 +66,9 @@ $fWidth: 70%;
     &:placeholder-shown {
       border-color: #2c405825;
     }
+  }
+
+  &__input-error {
+    color: red;
   }
 }

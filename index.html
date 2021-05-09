@@ -516,7 +516,12 @@
       <button class="gallery__more btn">see more</button>
     </section>
     <section class="contact" id="contact">
-      <form action="#" class="form">
+      <form
+        class="form"
+        onsubmit="validateForm()"
+        method="post"
+        action="javascript:void(0);"
+      >
         <header class="section__header">
           <hr class="section__divider" />
           <h3 class="section__title">get in touch</h3>
@@ -540,20 +545,18 @@
           <div class="form__inputs">
             <input
               class="form__input input"
-              minlength="1"
-              maxlength="30"
               type="text"
               name="name"
               placeholder="Name"
             />
+            <p class="form__input-error"></p>
             <input
               class="form__input input"
-              minlength="1"
-              maxlength="30"
-              type="email"
+              type="text"
               name="email"
               placeholder="Email"
             />
+            <p class="form__input-error"></p>
             <button class="form__submit btn" type="submit">submit</button>
           </div>
         </div>
@@ -596,5 +599,6 @@
         Copyrights © 2017 Monticello Group | Made with 🤍 by Ga Huy
       </p>
     </footer>
+    <script src="js/form.js"></script>
   </body>
 </html>
