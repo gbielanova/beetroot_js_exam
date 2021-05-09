@@ -2,7 +2,7 @@
   @include section-background($blue, url(./../img/news_bg.jpg));
 
   height: 100vh;
-  min-height: 600px;
+  min-height: 750px;
   width: 100vw;
 
   @include flex-center();

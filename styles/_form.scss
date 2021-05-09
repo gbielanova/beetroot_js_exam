@@ -3,6 +3,7 @@ $fWidth: 70%;
 
 .form {
   height: $fHeight;
+  min-height: 350px;
   width: $fWidth;
   box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
   @include section-background($white, url(./../img/form_bg.jpg));
