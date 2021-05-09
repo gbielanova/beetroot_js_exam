@@ -12,23 +12,44 @@
 
   &__photos {
     width: 80%;
+    height: 60%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 5% auto;
   }
 
   &__photos-group {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
   }
 
   &__photo-big {
-    width: calc(50% - 10px);
-    margin: 5px;
+    width: 50%;
+    height: 100%;
+    @include section-background($blue, url(./../img/gallery1.jpg));
+    margin: 0 5px;
   }
 
   &__photo-small {
-    width: calc(50% - 10px);
-    margin: 5px;
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    &1 {
+      @include section-background($blue, url(./../img/gallery2.jpg));
+    }
+    &2 {
+      @include section-background($blue, url(./../img/gallery3.jpg));
+    }
+    &3 {
+      @include section-background($blue, url(./../img/gallery4.jpg));
+    }
+    &4 {
+      @include section-background($blue, url(./../img/gallery5.jpg));
+    }
   }
 }

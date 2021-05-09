@@ -24,6 +24,8 @@
 
     &-hover {
       display: none;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -78,6 +80,7 @@
 
   &__author-details {
     padding-left: 5%;
+    width: calc(100% - 60px - 5%);
   }
 
   &__author-name {

@@ -291,7 +291,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 40%;
-  width: 100%;
+  width: 95%;
 }
 
 .header__texts {
@@ -462,6 +462,11 @@
   width: 90%;
 }
 
+.news__slider-arrow {
+  height: 80px;
+  width: 80px;
+}
+
 .news__articles {
   height: 60%;
   min-height: 550px;
@@ -527,6 +532,8 @@
 
 .article__image-hover {
   display: none;
+  width: 80px;
+  height: 80px;
 }
 
 .article__texts {
@@ -594,6 +601,7 @@
 
 .article__author-details {
   padding-left: 5%;
+  width: calc(100% - 60px - 5%);
 }
 
 .article__author-name {
@@ -637,12 +645,16 @@
 
 .gallery__photos {
   width: 80%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 5% auto;
 }
 
@@ -652,16 +664,53 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100%;
+  width: 50%;
 }
 
 .gallery__photo-big {
-  width: calc(50% - 10px);
-  margin: 5px;
+  width: 50%;
+  height: 100%;
+  background-color: #55b7ff;
+  background-image: url(./../img/gallery1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 5px;
 }
 
 .gallery__photo-small {
-  width: calc(50% - 10px);
-  margin: 5px;
+  width: calc(50% - 5px);
+  height: calc(50% - 5px);
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.gallery__photo-small1 {
+  background-color: #55b7ff;
+  background-image: url(./../img/gallery2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__photo-small2 {
+  background-color: #55b7ff;
+  background-image: url(./../img/gallery3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__photo-small3 {
+  background-color: #55b7ff;
+  background-image: url(./../img/gallery4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__photo-small4 {
+  background-color: #55b7ff;
+  background-image: url(./../img/gallery5.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .contact {
@@ -692,9 +741,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
