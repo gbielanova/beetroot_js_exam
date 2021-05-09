@@ -35,6 +35,60 @@
   background-color: $white;
   border: 1px solid $grey;
   padding: 20px 40px;
+
+  &:focus {
+    outline: none;
+    color: $blue;
+    font-weight: bold;
+    border: 2px $blue solid;
+    box-shadow: 3px 3px $blue;
+  }
+
+  &:hover {
+    color: $purple;
+    font-weight: bold;
+    border: 1px $purple solid;
+  }
+}
+
+.lnk {
+  &:focus {
+    outline: none;
+    color: $blue;
+    font-weight: bold;
+    border: 2px $blue solid;
+    box-shadow: 3px 3px $blue;
+  }
+
+  &:hover {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
+.input {
+  &:focus {
+    outline: none;
+    color: $blue;
+    font-weight: bold;
+    border: 2px $blue solid;
+    box-shadow: 3px 3px $blue;
+
+    &::placeholder {
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    color: $purple;
+    font-weight: bold;
+
+    &::placeholder {
+      color: $purple;
+      font-weight: bold;
+    }
+  }
 }
 
 .section {

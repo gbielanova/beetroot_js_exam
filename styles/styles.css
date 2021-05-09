@@ -65,6 +65,89 @@
   padding: 20px 40px;
 }
 
+.btn:focus {
+  outline: none;
+  color: #55b7ff;
+  font-weight: bold;
+  border: 2px #55b7ff solid;
+  -webkit-box-shadow: 3px 3px #55b7ff;
+          box-shadow: 3px 3px #55b7ff;
+}
+
+.btn:hover {
+  color: #7e5aff;
+  font-weight: bold;
+  border: 1px #7e5aff solid;
+}
+
+.lnk:focus {
+  outline: none;
+  color: #55b7ff;
+  font-weight: bold;
+  border: 2px #55b7ff solid;
+  -webkit-box-shadow: 3px 3px #55b7ff;
+          box-shadow: 3px 3px #55b7ff;
+}
+
+.lnk:hover {
+  color: #55b7ff;
+  font-weight: bold;
+}
+
+.input:focus {
+  outline: none;
+  color: #55b7ff;
+  font-weight: bold;
+  border: 2px #55b7ff solid;
+  -webkit-box-shadow: 3px 3px #55b7ff;
+          box-shadow: 3px 3px #55b7ff;
+}
+
+.input:focus::-webkit-input-placeholder {
+  color: #55b7ff;
+  font-weight: bold;
+}
+
+.input:focus:-ms-input-placeholder {
+  color: #55b7ff;
+  font-weight: bold;
+}
+
+.input:focus::-ms-input-placeholder {
+  color: #55b7ff;
+  font-weight: bold;
+}
+
+.input:focus::placeholder {
+  color: #55b7ff;
+  font-weight: bold;
+}
+
+.input:hover {
+  color: #7e5aff;
+  font-weight: bold;
+}
+
+.input:hover::-webkit-input-placeholder {
+  color: #7e5aff;
+  font-weight: bold;
+}
+
+.input:hover:-ms-input-placeholder {
+  color: #7e5aff;
+  font-weight: bold;
+}
+
+.input:hover::-ms-input-placeholder {
+  color: #7e5aff;
+  font-weight: bold;
+}
+
+.input:hover::placeholder {
+  color: #7e5aff;
+  font-weight: bold;
+}
+
 .section__header {
   width: 100%;
   height: 20vh;
