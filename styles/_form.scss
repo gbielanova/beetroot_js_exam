@@ -82,3 +82,31 @@ $fWidth: 70%;
     left: 0;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .form {
+    height: 100%;
+    top: 0;
+
+    &__body {
+      flex-direction: column;
+    }
+
+    &__info,
+    &__inputs {
+      width: 90%;
+    }
+
+    &__info {
+      margin-bottom: 10%;
+    }
+
+    &__input {
+      height: 40px;
+    }
+
+    &__submit {
+      align-self: center;
+    }
+  }
+}

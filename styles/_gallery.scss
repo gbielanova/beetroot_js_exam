@@ -22,22 +22,21 @@
   &__photos-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
     height: 100%;
-    width: 50%;
+    width: calc(50% - 5px);
   }
 
   &__photo-big {
-    width: 50%;
+    width: calc(50% - 5px);
     height: 100%;
     @include section-background($blue, url(./../img/gallery1.jpg));
-    margin: 0 5px;
   }
 
   &__photo-small {
     width: calc(50% - 5px);
     height: calc(50% - 5px);
-    margin-bottom: 5px;
-    margin-left: 5px;
 
     &1 {
       @include section-background($blue, url(./../img/gallery2.jpg));
@@ -50,6 +49,21 @@
     }
     &4 {
       @include section-background($blue, url(./../img/gallery5.jpg));
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    height: 50vh;
+    min-height: 500px;
+
+    &__photos-group {
+      display: none;
+    }
+
+    &__photo-big {
+      width: 100%;
     }
   }
 }

@@ -97,3 +97,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .project {
+    &__img {
+      display: none;
+    }
+
+    &__images {
+      width: 5%;
+      height: 100%;
+    }
+  }
+}
