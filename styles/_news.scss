@@ -8,10 +8,19 @@
   @include flex-center();
   flex-direction: column;
 
+  &__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 95%;
+  }
+
   .swiper {
     &-container {
-      width: 90%;
-      height: 70%;
+      width: 85%;
+      height: 90%;
     }
 
     &-wrapper {
@@ -24,28 +33,18 @@
       height: 90%;
     }
 
-    &-button-prev {
-      margin-left: 20px;
-      left: 0;
-    }
-
-    &-button-next {
-      margin-right: 20px;
-      right: 0;
-    }
-
     &-button-next::after,
     &-button-prev::after {
       font-size: small;
       font-weight: bold;
-      color: black;
-      border: 1px black solid;
+      color: $white;
+      border: 1px $white solid;
       border-radius: 50%;
       padding: 17px 20px;
     }
 
     &-pagination {
-      bottom: 0;
+      bottom: 2%;
 
       &-bullet {
         background-color: $white;
@@ -54,20 +53,9 @@
   }
 }
 
-// @media only screen and (max-width: 767px) {
-//   .news {
-//     height: 90vh;
-
-//     &__item:nth-child(n + 2) {
-//       display: none;
-//     }
-
-//     &__item:nth-child(1) {
-//       width: 100%;
-//     }
-
-//     &__slider-arrow {
-//       display: none;
-//     }
-//   }
-// }
+@media only screen and (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
