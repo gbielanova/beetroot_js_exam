@@ -12,6 +12,10 @@
     list-style: none;
   }
 
+  &__logo {
+    width: 40%;
+  }
+
   &__item {
     display: flex;
     align-items: center;
