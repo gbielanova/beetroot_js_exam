@@ -21,4 +21,9 @@ burgerNav.addEventListener('click', ToggleBurger);
 
 overlay.addEventListener('click', ToggleBurger);
 
-navItems.addEventListener('click', ToggleBurger);
+navItems.addEventListener('click', (event) => {
+    document.querySelector('.nav__item-circle.active').classList.toggle('active');
+    event.target.previousElementSibling.classList.toggle('active');
+    ToggleBurger;
+});
+

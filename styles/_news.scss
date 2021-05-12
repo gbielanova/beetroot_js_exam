@@ -33,6 +33,11 @@
       height: 90%;
     }
 
+    &-button-next,
+    &-button-prev {
+      outline: none;
+    }
+
     &-button-next::after,
     &-button-prev::after {
       font-size: small;
@@ -41,6 +46,18 @@
       border: 1px $white solid;
       border-radius: 50%;
       padding: 17px 20px;
+    }
+
+    &-button-prev:hover::after,
+    &-button-next:hover::after {
+      color: $purple;
+      background-color: $white;
+    }
+
+    &-button-prev:focus::after,
+    &-button-next:focus::after {
+      color: $blue;
+      background-color: $white;
     }
 
     &-pagination {
