@@ -9,6 +9,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Monticello</title>
   </head>
@@ -136,12 +140,9 @@
         <hr class="section__divider section__divider--white" />
         <h3 class="section__title section__title--white">latest news</h3>
       </header>
-      <div class="news__slider">
-        <svg class="news__slider-arrow">
-          <use xlink:href="./img/sprite.svg#slider-left"></use>
-        </svg>
-        <ul class="news__articles">
-          <li class="news__item">
+      <div class="news__slider swiper-container">
+        <ul class="news__articles swiper-wrapper">
+          <li class="news__item swiper-slide">
             <article class="article">
               <div class="article__image article__image--bg1">
                 <svg class="article__image-hover">
@@ -166,7 +167,7 @@
               </div>
             </article>
           </li>
-          <li class="news__item">
+          <li class="news__item swiper-slide">
             <article class="article">
               <div class="article__image article__image--bg2">
                 <svg class="article__image-hover">
@@ -191,7 +192,7 @@
               </div>
             </article>
           </li>
-          <li class="news__item">
+          <li class="news__item swiper-slide">
             <article class="article">
               <div class="article__image article__image--bg3">
                 <svg class="article__image-hover">
@@ -215,10 +216,60 @@
               </div>
             </article>
           </li>
+          <li class="news__item swiper-slide">
+            <article class="article">
+              <div class="article__image article__image--bg1">
+                <svg class="article__image-hover">
+                  <use xlink:href="./img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+              <div class="article__texts">
+                <header class="article__header">
+                  See The Unmatched Beauty Of The Great.
+                </header>
+                <p class="article__text">
+                  Free directories: directories are perfect for customers that
+                  are... searching for a particular topic.
+                </p>
+                <div class="article__author">
+                  <div class="article__photo article__photo--photo1"></div>
+                  <div class="article__author-details">
+                    <p class="article__author-name">Isaac Dunn</p>
+                    <p class="article__date">09 Feb 2017</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="news__item swiper-slide">
+            <article class="article">
+              <div class="article__image article__image--bg2">
+                <svg class="article__image-hover">
+                  <use xlink:href="./img/sprite.svg#plus"></use>
+                </svg>
+              </div>
+              <div class="article__texts">
+                <header class="article__header">
+                  Effective Advertising Pointers.
+                </header>
+                <p class="article__text">
+                  Having a home based business is a wonderful asset to your
+                  life...
+                </p>
+                <div class="article__author">
+                  <div class="article__photo article__photo--photo2"></div>
+                  <div class="article__author-details">
+                    <p class="article__author-name">Dominic Freeman</p>
+                    <p class="article__date">24 Apr 2017</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
         </ul>
-        <svg class="news__slider-arrow">
-          <use xlink:href="./img/sprite.svg#slider-right"></use>
-        </svg>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     <section class="gallery" id="gallery">
@@ -309,6 +360,8 @@
         Copyrights © 2017 Monticello Group | Made with 🤍 by Ga Huy
       </p>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/form.js"></script>
   </body>

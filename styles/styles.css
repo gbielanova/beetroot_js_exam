@@ -26,10 +26,6 @@
   src: url(./../fonts/GothamMediumRegular/gotham-medium-webfont.woff2) format("woff2");
 }
 
-.page {
-  padding: 40px;
-}
-
 .active {
   background-color: #ffffff;
 }
@@ -55,6 +51,7 @@
 }
 
 .btn {
+  cursor: pointer;
   color: #2c4058;
   font-family: "GothamBook", sans-serif;
   font-size: 14px;
@@ -80,6 +77,10 @@
   border: 1px #7e5aff solid;
 }
 
+.lnk {
+  cursor: pointer;
+}
+
 .lnk:focus {
   outline: none;
   color: #55b7ff;
@@ -92,6 +93,10 @@
 .lnk:hover {
   color: #55b7ff;
   font-weight: bold;
+}
+
+.input {
+  cursor: pointer;
 }
 
 .input:focus {
@@ -604,62 +609,46 @@
           flex-direction: column;
 }
 
-.news__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 80%;
-  width: 100%;
+.news .swiper-container {
+  width: 90%;
+  height: 70%;
 }
 
-.news__slider-arrow {
-  height: 80px;
-  width: 80px;
-}
-
-.news__articles {
-  height: 60%;
-  min-height: 550px;
-  width: 80%;
+.news .swiper-wrapper {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.news__item {
-  width: 30%;
   height: 100%;
+  width: 300px;
 }
 
-@media only screen and (max-width: 767px) {
-  .news {
-    height: 90vh;
-  }
-  .news__item:nth-child(n + 2) {
-    display: none;
-  }
-  .news__item:nth-child(1) {
-    width: 100%;
-  }
-  .news__slider-arrow {
-    display: none;
-  }
+.news .swiper-slide {
+  height: 90%;
+}
+
+.news .swiper-button-prev {
+  margin-left: 20px;
+  left: 0;
+}
+
+.news .swiper-button-next {
+  margin-right: 20px;
+  right: 0;
+}
+
+.news .swiper-button-next::after, .news .swiper-button-prev::after {
+  font-size: small;
+  font-weight: bold;
+  color: black;
+  border: 1px black solid;
+  border-radius: 50%;
+  padding: 17px 20px;
+}
+
+.news .swiper-pagination {
+  bottom: 0;
+}
+
+.news .swiper-pagination-bullet {
+  background-color: #ffffff;
 }
 
 .article {
