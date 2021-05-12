@@ -44,7 +44,7 @@ new Swiper('.header__content', {
     autoplay: {
         delay: 4000,
     },
-    speed: 1200,
+    speed: 1,
     breakpoints: {
         1024: {
             pagination: {
