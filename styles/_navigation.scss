@@ -46,7 +46,7 @@
     position: fixed;
     top: 20%;
     width: 80%;
-    z-index: 1;
+    z-index: 3;
     -webkit-animation: fadein 1s ease-in alternate;
     -moz-animation: fadein 1s ease-in alternate;
     animation: fadein 1s ease-in alternate;
@@ -96,6 +96,7 @@
   opacity: 0;
   transition: 0.5s ease-in-out;
   will-change: transform;
+  z-index: 2;
 }
 
 .run {
@@ -139,7 +140,7 @@
 
     &__burger {
       display: block;
-      z-index: 1;
+      z-index: 3;
     }
   }
 }
