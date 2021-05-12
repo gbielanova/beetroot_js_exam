@@ -5,7 +5,7 @@ new Swiper('.news__slider', {
     },
     pagination: {
         el: '.swiper-pagination',
-        clickable: true
+        clickable: false,
     },
     slidesPerView: 3,
     spaceBetween: 30,
@@ -26,6 +26,9 @@ new Swiper('.news__slider', {
 
         800: {
             slidesPerView: 3,
+            pagination: {
+                clickable: true,
+            },
         }
 
     }
