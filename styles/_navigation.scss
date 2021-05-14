@@ -31,6 +31,10 @@
     text-transform: uppercase;
   }
 
+  &__item-active {
+    background-color: $white;
+  }
+
   &__burger {
     display: none;
 

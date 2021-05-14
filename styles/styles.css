@@ -26,10 +26,6 @@
   src: url(./../fonts/GothamMediumRegular/gotham-medium-webfont.woff2) format("woff2");
 }
 
-.active {
-  background-color: #ffffff;
-}
-
 .blue {
   background-color: #55b7ff;
 }
@@ -264,6 +260,10 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.nav__item-active {
+  background-color: #ffffff;
 }
 
 .nav__burger {
